@@ -1,0 +1,1 @@
+C:\C#\Projecto-C-\Calculadora Cientifica\Calculadora Cientifica\bin\Debug\Calculadora Cientifica.exe.config
