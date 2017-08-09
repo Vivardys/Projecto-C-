@@ -1,6 +1,6 @@
 ﻿namespace Calculadora_Cientifica
 {
-    partial class Form1
+    partial class Calculadora
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Textbox_secundario = new System.Windows.Forms.TextBox();
             this.Textbox_Principal = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -86,24 +86,24 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.Textbox_Principal);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.Textbox_secundario);
             this.panel1.Location = new System.Drawing.Point(37, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(780, 73);
             this.panel1.TabIndex = 0;
             // 
-            // textBox1
+            // Textbox_secundario
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(18, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(759, 29);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Textbox_secundario.BackColor = System.Drawing.Color.White;
+            this.Textbox_secundario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Textbox_secundario.ForeColor = System.Drawing.Color.Black;
+            this.Textbox_secundario.Location = new System.Drawing.Point(18, 12);
+            this.Textbox_secundario.Multiline = true;
+            this.Textbox_secundario.Name = "Textbox_secundario";
+            this.Textbox_secundario.ReadOnly = true;
+            this.Textbox_secundario.Size = new System.Drawing.Size(759, 29);
+            this.Textbox_secundario.TabIndex = 0;
+            this.Textbox_secundario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Textbox_Principal
             // 
@@ -313,6 +313,7 @@
             this.Nueve.TabIndex = 24;
             this.Nueve.Text = "9";
             this.Nueve.UseVisualStyleBackColor = true;
+            this.Nueve.Click += new System.EventHandler(this.Nueve_Click);
             // 
             // Ocho
             // 
@@ -322,6 +323,7 @@
             this.Ocho.TabIndex = 23;
             this.Ocho.Text = "8";
             this.Ocho.UseVisualStyleBackColor = true;
+            this.Ocho.Click += new System.EventHandler(this.Ocho_Click);
             // 
             // Siete
             // 
@@ -331,6 +333,7 @@
             this.Siete.TabIndex = 22;
             this.Siete.Text = "7";
             this.Siete.UseVisualStyleBackColor = true;
+            this.Siete.Click += new System.EventHandler(this.Siete_Click);
             // 
             // xy
             // 
@@ -386,6 +389,7 @@
             this.seis.TabIndex = 32;
             this.seis.Text = "6";
             this.seis.UseVisualStyleBackColor = true;
+            this.seis.Click += new System.EventHandler(this.seis_Click);
             // 
             // cinco
             // 
@@ -395,6 +399,7 @@
             this.cinco.TabIndex = 31;
             this.cinco.Text = "5";
             this.cinco.UseVisualStyleBackColor = true;
+            this.cinco.Click += new System.EventHandler(this.cinco_Click);
             // 
             // cuatro
             // 
@@ -404,6 +409,7 @@
             this.cuatro.TabIndex = 30;
             this.cuatro.Text = "4";
             this.cuatro.UseVisualStyleBackColor = true;
+            this.cuatro.Click += new System.EventHandler(this.cuatro_Click);
             // 
             // x3
             // 
@@ -467,6 +473,7 @@
             this.uno.TabIndex = 38;
             this.uno.Text = "1";
             this.uno.UseVisualStyleBackColor = true;
+            this.uno.Click += new System.EventHandler(this.uno_Click);
             // 
             // dos
             // 
@@ -476,6 +483,7 @@
             this.dos.TabIndex = 39;
             this.dos.Text = "2";
             this.dos.UseVisualStyleBackColor = true;
+            this.dos.Click += new System.EventHandler(this.dos_Click);
             // 
             // tres
             // 
@@ -485,6 +493,7 @@
             this.tres.TabIndex = 40;
             this.tres.Text = "3";
             this.tres.UseVisualStyleBackColor = true;
+            this.tres.Click += new System.EventHandler(this.tres_Click);
             // 
             // menos
             // 
@@ -513,6 +522,7 @@
             this.punto.TabIndex = 47;
             this.punto.Text = ".";
             this.punto.UseVisualStyleBackColor = true;
+            this.punto.Click += new System.EventHandler(this.punto_Click);
             // 
             // cero
             // 
@@ -522,6 +532,7 @@
             this.cero.TabIndex = 45;
             this.cero.Text = "0";
             this.cero.UseVisualStyleBackColor = true;
+            this.cero.Click += new System.EventHandler(this.cero_Click);
             // 
             // log
             // 
@@ -559,7 +570,7 @@
             this.Igual.Text = "=";
             this.Igual.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -613,8 +624,9 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Calculadora";
+            this.Text = "Calculadora";
+            this.Load += new System.EventHandler(this.Calculadora_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -626,7 +638,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox Textbox_Principal;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Textbox_secundario;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Button Sin;

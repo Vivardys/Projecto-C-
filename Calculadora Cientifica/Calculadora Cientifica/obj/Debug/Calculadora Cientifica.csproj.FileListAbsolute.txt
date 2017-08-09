@@ -1,1 +1,9 @@
 C:\C#\Projecto-C-\Calculadora Cientifica\Calculadora Cientifica\bin\Debug\Calculadora Cientifica.exe.config
+C:\C#\Projecto-C-\Calculadora Cientifica\Calculadora Cientifica\bin\Debug\Calculadora Cientifica.exe
+C:\C#\Projecto-C-\Calculadora Cientifica\Calculadora Cientifica\bin\Debug\Calculadora Cientifica.pdb
+C:\C#\Projecto-C-\Calculadora Cientifica\Calculadora Cientifica\obj\Debug\Calculadora Cientifica.csprojResolveAssemblyReference.cache
+C:\C#\Projecto-C-\Calculadora Cientifica\Calculadora Cientifica\obj\Debug\Calculadora_Cientifica.Calculadora.resources
+C:\C#\Projecto-C-\Calculadora Cientifica\Calculadora Cientifica\obj\Debug\Calculadora_Cientifica.Properties.Resources.resources
+C:\C#\Projecto-C-\Calculadora Cientifica\Calculadora Cientifica\obj\Debug\Calculadora Cientifica.csproj.GenerateResource.Cache
+C:\C#\Projecto-C-\Calculadora Cientifica\Calculadora Cientifica\obj\Debug\Calculadora Cientifica.exe
+C:\C#\Projecto-C-\Calculadora Cientifica\Calculadora Cientifica\obj\Debug\Calculadora Cientifica.pdb
