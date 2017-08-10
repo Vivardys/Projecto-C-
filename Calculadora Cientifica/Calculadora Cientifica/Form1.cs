@@ -345,11 +345,79 @@ namespace Calculadora_Cientifica
             }
             tipoOperaciones = "/";
 
-           } 
-            //Metodos con las operaciones de + - * /
-                private void Operaciones(double valor1,double valor2)
+        }
+        //Metodos con las operaciones de + - * /
+        private void Operaciones(double valor1, double valor2)
+        {
+            //Switch que evalua la variable tipoOperaciones
+            switch (tipoOperaciones)
+            {
+                //case de la suma
+                case "+":
+                    resultado = valor1 + valor2;
+                    Textbox_Principal.Text = resultado.ToString();
+                    valor1 = Convert.ToDouble(Textbox_Principal.Text);
+                    break;
+
+                //case de la resta
+                case "-":
+                    resultado = valor1 - valor2;
+                    Textbox_Principal.Text = resultado.ToString();
+                    valor1 = Convert.ToDouble(Textbox_Principal.Text);
+                    break;
+
+                //case de la multiplicacion
+                case "*":
+                    resultado = valor1 * valor2;
+                    Textbox_Principal.Text = resultado.ToString();
+                    valor1 = Convert.ToDouble(Textbox_Principal.Text);
+                    break;
+
+                //case de la suma
+                case "/":
+                    if (valor2 == 0)
+                    {
+                        Textbox_Principal.Text = "Error";
+                        break;
+                    }
+                    else
+                    {
+                        resultado = valor1 / valor2;
+                        Textbox_Principal.Text = resultado.ToString();
+                        valor1 = Convert.ToDouble(Textbox_Principal.Text);
+                        break;
+                    }
+
+            }
+
+        }
+
+        private void unoentrex_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Igual_Click(object sender, EventArgs e)
+        {
+            inicio = true;
+            operacion1 = true;
+            if (igual)
                 {
-        }           
+                    if (tipoOperaciones == null)
+                    {
+
+
+                    }
+                    else
+                    {
+                        valor2 = Convert.ToDouble(Textbox_Principal.Text);
+                        Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text;
+                        Operaciones(valor1, valor2);
+                        igual = false;
+                    }
+
+                  }
+        }
     }
 }
 

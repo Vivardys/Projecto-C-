@@ -371,6 +371,7 @@
             this.unoentrex.TabIndex = 34;
             this.unoentrex.Text = "1/x";
             this.unoentrex.UseVisualStyleBackColor = true;
+            this.unoentrex.Click += new System.EventHandler(this.unoentrex_Click);
             // 
             // multiplicacion
             // 
@@ -573,6 +574,7 @@
             this.Igual.TabIndex = 49;
             this.Igual.Text = "=";
             this.Igual.UseVisualStyleBackColor = true;
+            this.Igual.Click += new System.EventHandler(this.Igual_Click);
             // 
             // Calculadora
             // 
