@@ -30,7 +30,7 @@ namespace Calculadora_Cientifica
 
         private void Calculadora_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void uno_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace Calculadora_Cientifica
             else
             {
                 Textbox_Principal.Text = Textbox_Principal.Text + "1";
-            
+
             }
 
 
@@ -210,7 +210,147 @@ namespace Calculadora_Cientifica
 
             }
 
-            
+
         }
+        // Boton De Suma
+        private void mas_Click(object sender, EventArgs e)
+        {
+            igual = true;
+            inicio = true;
+            // Condiciones para la variable operacion1
+            if (operacion1)
+            {
+                valor1 = Convert.ToDouble(Textbox_Principal.Text);
+                Textbox_secundario.Text = "";
+                Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "+";
+                operacion1 = false;
+            }
+            else
+            {
+
+                // Condiciones para la variable operacion2
+                if (operacion2)
+                {
+                    valor2 = Convert.ToDouble(Textbox_Principal.Text);
+                    Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "+";
+                    operacion2 = false;
+
+                }
+                else
+                {
+                    Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "+";
+                    Operaciones(resultado, valor2);
+                }
+            }
+            tipoOperaciones = "+";
+        }
+
+
+        //Boton Resta
+        private void menos_Click(object sender, EventArgs e)
+        {
+            igual = true;
+            inicio = true;
+            // Condiciones para la variable operacion1
+            if (operacion1)
+            {
+                valor1 = Convert.ToDouble(Textbox_Principal.Text);
+                Textbox_secundario.Text = "";
+                Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "-";
+                operacion1 = false;
+
+            }
+            else
+            {
+
+                // Condiciones para la variable operacion2
+                if (operacion2)
+                {
+                    valor2 = Convert.ToDouble(Textbox_Principal.Text);
+                    Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "-";
+                    operacion2 = false;
+
+                }
+                else
+                {
+                    Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "-";
+                    Operaciones(resultado, valor2);
+                }
+            }
+            tipoOperaciones = "-";
+        }
+
+        //Boton Multiplicar
+        private void multiplicacion_Click(object sender, EventArgs e)
+        {
+            igual = true;
+            inicio = true;
+            // Condiciones para la variable operacion1
+            if (operacion1)
+            {
+                valor1 = Convert.ToDouble(Textbox_Principal.Text);
+                Textbox_secundario.Text = "";
+                Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "*";
+                operacion1 = false;
+            }
+            else
+            {
+
+                // Condiciones para la variable operacion2
+                if (operacion2)
+                {
+                    valor2 = Convert.ToDouble(Textbox_Principal.Text);
+                    Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "*";
+                    operacion2 = false;
+
+                }
+                else
+                {
+                    Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "*";
+                    Operaciones(resultado, valor2);
+                }
+            }
+            tipoOperaciones = "*";
+        }
+
+        //Boton Division
+        private void Dividir_Click(object sender, EventArgs e)
+        {
+            igual = true;
+            inicio = true;
+            // Condiciones para la variable operacion1
+            if (operacion1)
+            {
+                valor1 = Convert.ToDouble(Textbox_Principal.Text);
+                Textbox_secundario.Text = "";
+                Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "/";
+                operacion1 = false;
+            }
+            else
+            {
+
+                // Condiciones para la variable operacion2
+                if (operacion2)
+                {
+                    valor2 = Convert.ToDouble(Textbox_Principal.Text);
+                    Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "/";
+                    operacion2 = false;
+
+                }
+                else
+                {
+                    Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text + "/";
+                    Operaciones(resultado, valor2);
+                }
+            }
+            tipoOperaciones = "/";
+
+           } 
+            //Metodos con las operaciones de + - * /
+                private void Operaciones(double valor1,double valor2)
+                {
+        }           
     }
 }
+
+ 

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Textbox_secundario = new System.Windows.Forms.TextBox();
             this.Textbox_Principal = new System.Windows.Forms.TextBox();
+            this.Textbox_secundario = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.Sin = new System.Windows.Forms.Button();
@@ -72,7 +72,7 @@
             this.dos = new System.Windows.Forms.Button();
             this.tres = new System.Windows.Forms.Button();
             this.menos = new System.Windows.Forms.Button();
-            this.mas = new System.Windows.Forms.Button();
+            this.suma = new System.Windows.Forms.Button();
             this.punto = new System.Windows.Forms.Button();
             this.cero = new System.Windows.Forms.Button();
             this.log = new System.Windows.Forms.Button();
@@ -92,19 +92,6 @@
             this.panel1.Size = new System.Drawing.Size(780, 73);
             this.panel1.TabIndex = 0;
             // 
-            // Textbox_secundario
-            // 
-            this.Textbox_secundario.BackColor = System.Drawing.Color.White;
-            this.Textbox_secundario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Textbox_secundario.ForeColor = System.Drawing.Color.Black;
-            this.Textbox_secundario.Location = new System.Drawing.Point(18, 12);
-            this.Textbox_secundario.Multiline = true;
-            this.Textbox_secundario.Name = "Textbox_secundario";
-            this.Textbox_secundario.ReadOnly = true;
-            this.Textbox_secundario.Size = new System.Drawing.Size(759, 29);
-            this.Textbox_secundario.TabIndex = 0;
-            this.Textbox_secundario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // Textbox_Principal
             // 
             this.Textbox_Principal.BackColor = System.Drawing.Color.White;
@@ -119,6 +106,19 @@
             this.Textbox_Principal.TabIndex = 1;
             this.Textbox_Principal.Text = "0";
             this.Textbox_Principal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // Textbox_secundario
+            // 
+            this.Textbox_secundario.BackColor = System.Drawing.Color.White;
+            this.Textbox_secundario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Textbox_secundario.ForeColor = System.Drawing.Color.Black;
+            this.Textbox_secundario.Location = new System.Drawing.Point(18, 12);
+            this.Textbox_secundario.Multiline = true;
+            this.Textbox_secundario.Name = "Textbox_secundario";
+            this.Textbox_secundario.ReadOnly = true;
+            this.Textbox_secundario.Size = new System.Drawing.Size(759, 29);
+            this.Textbox_secundario.TabIndex = 0;
+            this.Textbox_secundario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // radioButton1
             // 
@@ -304,6 +304,7 @@
             this.Dividir.TabIndex = 25;
             this.Dividir.Text = "/";
             this.Dividir.UseVisualStyleBackColor = true;
+            this.Dividir.Click += new System.EventHandler(this.Dividir_Click);
             // 
             // Nueve
             // 
@@ -380,6 +381,7 @@
             this.multiplicacion.TabIndex = 33;
             this.multiplicacion.Text = "*";
             this.multiplicacion.UseVisualStyleBackColor = true;
+            this.multiplicacion.Click += new System.EventHandler(this.multiplicacion_Click);
             // 
             // seis
             // 
@@ -503,15 +505,17 @@
             this.menos.TabIndex = 41;
             this.menos.Text = "-";
             this.menos.UseVisualStyleBackColor = true;
+            this.menos.Click += new System.EventHandler(this.menos_Click);
             // 
-            // mas
+            // suma
             // 
-            this.mas.Location = new System.Drawing.Point(617, 392);
-            this.mas.Name = "mas";
-            this.mas.Size = new System.Drawing.Size(63, 44);
-            this.mas.TabIndex = 48;
-            this.mas.Text = "+";
-            this.mas.UseVisualStyleBackColor = true;
+            this.suma.Location = new System.Drawing.Point(617, 392);
+            this.suma.Name = "suma";
+            this.suma.Size = new System.Drawing.Size(63, 44);
+            this.suma.TabIndex = 48;
+            this.suma.Text = "+";
+            this.suma.UseVisualStyleBackColor = true;
+            this.suma.Click += new System.EventHandler(this.mas_Click);
             // 
             // punto
             // 
@@ -576,7 +580,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 492);
             this.Controls.Add(this.Igual);
-            this.Controls.Add(this.mas);
+            this.Controls.Add(this.suma);
             this.Controls.Add(this.punto);
             this.Controls.Add(this.cero);
             this.Controls.Add(this.log);
@@ -680,7 +684,7 @@
         private System.Windows.Forms.Button dos;
         private System.Windows.Forms.Button tres;
         private System.Windows.Forms.Button menos;
-        private System.Windows.Forms.Button mas;
+        private System.Windows.Forms.Button suma;
         private System.Windows.Forms.Button punto;
         private System.Windows.Forms.Button cero;
         private System.Windows.Forms.Button log;
