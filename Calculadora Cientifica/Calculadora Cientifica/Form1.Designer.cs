@@ -79,12 +79,14 @@
             this.EXP = new System.Windows.Forms.Button();
             this.diezx = new System.Windows.Forms.Button();
             this.Igual = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Textbox_Principal);
             this.panel1.Controls.Add(this.Textbox_secundario);
             this.panel1.Location = new System.Drawing.Point(37, 12);
@@ -150,6 +152,7 @@
             this.Sin.TabIndex = 3;
             this.Sin.Text = "Sin";
             this.Sin.UseVisualStyleBackColor = true;
+            this.Sin.Click += new System.EventHandler(this.Sin_Click);
             // 
             // Cos
             // 
@@ -159,6 +162,7 @@
             this.Cos.TabIndex = 4;
             this.Cos.Text = "Cos";
             this.Cos.UseVisualStyleBackColor = true;
+            this.Cos.Click += new System.EventHandler(this.Cos_Click);
             // 
             // Tan
             // 
@@ -168,6 +172,7 @@
             this.Tan.TabIndex = 5;
             this.Tan.Text = "Tan";
             this.Tan.UseVisualStyleBackColor = true;
+            this.Tan.Click += new System.EventHandler(this.Tan_Click);
             // 
             // MC
             // 
@@ -177,6 +182,7 @@
             this.MC.TabIndex = 6;
             this.MC.Text = "MC";
             this.MC.UseVisualStyleBackColor = true;
+            this.MC.Click += new System.EventHandler(this.MC_Click);
             // 
             // MR
             // 
@@ -186,6 +192,7 @@
             this.MR.TabIndex = 7;
             this.MR.Text = "MR";
             this.MR.UseVisualStyleBackColor = true;
+            this.MR.Click += new System.EventHandler(this.MR_Click);
             // 
             // MS
             // 
@@ -195,6 +202,7 @@
             this.MS.TabIndex = 8;
             this.MS.Text = "MS";
             this.MS.UseVisualStyleBackColor = true;
+            this.MS.Click += new System.EventHandler(this.MS_Click);
             // 
             // M_mas
             // 
@@ -205,6 +213,7 @@
             this.M_mas.TabIndex = 9;
             this.M_mas.Text = "M+";
             this.M_mas.UseVisualStyleBackColor = true;
+            this.M_mas.Click += new System.EventHandler(this.M_mas_Click);
             // 
             // M_menos
             // 
@@ -214,6 +223,7 @@
             this.M_menos.TabIndex = 10;
             this.M_menos.Text = "M-";
             this.M_menos.UseVisualStyleBackColor = true;
+            this.M_menos.Click += new System.EventHandler(this.M_menos_Click);
             // 
             // Raiz
             // 
@@ -233,6 +243,7 @@
             this.masomenos.TabIndex = 17;
             this.masomenos.Text = "±";
             this.masomenos.UseVisualStyleBackColor = true;
+            this.masomenos.Click += new System.EventHandler(this.masomenos_Click);
             // 
             // C
             // 
@@ -272,6 +283,7 @@
             this.Tanmenos1.TabIndex = 13;
             this.Tanmenos1.Text = "Tan-1";
             this.Tanmenos1.UseVisualStyleBackColor = true;
+            this.Tanmenos1.Click += new System.EventHandler(this.Tanmenos1_Click);
             // 
             // Cosmenos1
             // 
@@ -281,6 +293,7 @@
             this.Cosmenos1.TabIndex = 12;
             this.Cosmenos1.Text = "Cos-1";
             this.Cosmenos1.UseVisualStyleBackColor = true;
+            this.Cosmenos1.Click += new System.EventHandler(this.Cosmenos1_Click);
             // 
             // Sinmenos1
             // 
@@ -290,6 +303,7 @@
             this.Sinmenos1.TabIndex = 11;
             this.Sinmenos1.Text = "Sin-1";
             this.Sinmenos1.UseVisualStyleBackColor = true;
+            this.Sinmenos1.Click += new System.EventHandler(this.Sinmenos1_Click);
             // 
             // Porciento
             // 
@@ -349,6 +363,7 @@
             this.xy.TabIndex = 21;
             this.xy.Text = "X^Y";
             this.xy.UseVisualStyleBackColor = true;
+            this.xy.Click += new System.EventHandler(this.xy_Click);
             // 
             // x1
             // 
@@ -358,6 +373,7 @@
             this.x1.TabIndex = 20;
             this.x1.Text = "X^-1";
             this.x1.UseVisualStyleBackColor = true;
+            this.x1.Click += new System.EventHandler(this.x1_Click);
             // 
             // Pin
             // 
@@ -367,6 +383,7 @@
             this.Pin.TabIndex = 19;
             this.Pin.Text = "Pi(N)";
             this.Pin.UseVisualStyleBackColor = true;
+            this.Pin.Click += new System.EventHandler(this.Pin_Click);
             // 
             // unoentrex
             // 
@@ -427,6 +444,7 @@
             this.x3.TabIndex = 29;
             this.x3.Text = "X^3";
             this.x3.UseVisualStyleBackColor = true;
+            this.x3.Click += new System.EventHandler(this.x3_Click);
             // 
             // YX
             // 
@@ -436,6 +454,7 @@
             this.YX.TabIndex = 28;
             this.YX.Text = "y√x";
             this.YX.UseVisualStyleBackColor = true;
+            this.YX.Click += new System.EventHandler(this.YX_Click);
             // 
             // neper
             // 
@@ -445,6 +464,7 @@
             this.neper.TabIndex = 27;
             this.neper.Text = "e";
             this.neper.UseVisualStyleBackColor = true;
+            this.neper.Click += new System.EventHandler(this.neper_Click);
             // 
             // factoriales
             // 
@@ -454,6 +474,7 @@
             this.factoriales.TabIndex = 35;
             this.factoriales.Text = "n!";
             this.factoriales.UseVisualStyleBackColor = true;
+            this.factoriales.Click += new System.EventHandler(this.factoriales_Click);
             // 
             // tresx
             // 
@@ -463,6 +484,7 @@
             this.tresx.TabIndex = 36;
             this.tresx.Text = "3√x";
             this.tresx.UseVisualStyleBackColor = true;
+            this.tresx.Click += new System.EventHandler(this.tresx_Click);
             // 
             // xdos
             // 
@@ -472,6 +494,7 @@
             this.xdos.TabIndex = 37;
             this.xdos.Text = "X^2";
             this.xdos.UseVisualStyleBackColor = true;
+            this.xdos.Click += new System.EventHandler(this.xdos_Click);
             // 
             // uno
             // 
@@ -552,6 +575,7 @@
             this.log.TabIndex = 44;
             this.log.Text = "log";
             this.log.UseVisualStyleBackColor = true;
+            this.log.Click += new System.EventHandler(this.log_Click);
             // 
             // EXP
             // 
@@ -561,6 +585,7 @@
             this.EXP.TabIndex = 43;
             this.EXP.Text = "EXP";
             this.EXP.UseVisualStyleBackColor = true;
+            this.EXP.Click += new System.EventHandler(this.EXP_Click);
             // 
             // diezx
             // 
@@ -570,6 +595,7 @@
             this.diezx.TabIndex = 42;
             this.diezx.Text = "10^x";
             this.diezx.UseVisualStyleBackColor = true;
+            this.diezx.Click += new System.EventHandler(this.diezx_Click);
             // 
             // Igual
             // 
@@ -581,11 +607,20 @@
             this.Igual.UseVisualStyleBackColor = true;
             this.Igual.Click += new System.EventHandler(this.Igual_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(624, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 17);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "M";
+            // 
             // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(843, 492);
+            this.ClientSize = new System.Drawing.Size(838, 466);
             this.Controls.Add(this.Igual);
             this.Controls.Add(this.suma);
             this.Controls.Add(this.punto);
@@ -698,6 +733,7 @@
         private System.Windows.Forms.Button EXP;
         private System.Windows.Forms.Button diezx;
         private System.Windows.Forms.Button Igual;
+        private System.Windows.Forms.Label label1;
     }
 }
 
