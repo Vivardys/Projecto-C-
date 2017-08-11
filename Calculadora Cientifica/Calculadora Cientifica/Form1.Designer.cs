@@ -45,7 +45,7 @@
             this.masomenos = new System.Windows.Forms.Button();
             this.C = new System.Windows.Forms.Button();
             this.CE = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.Retroceso = new System.Windows.Forms.Button();
             this.Tanmenos1 = new System.Windows.Forms.Button();
             this.Cosmenos1 = new System.Windows.Forms.Button();
             this.Sinmenos1 = new System.Windows.Forms.Button();
@@ -223,6 +223,7 @@
             this.Raiz.TabIndex = 18;
             this.Raiz.Text = "√";
             this.Raiz.UseVisualStyleBackColor = true;
+            this.Raiz.Click += new System.EventHandler(this.Raiz_Click);
             // 
             // masomenos
             // 
@@ -241,6 +242,7 @@
             this.C.TabIndex = 16;
             this.C.Text = "C";
             this.C.UseVisualStyleBackColor = true;
+            this.C.Click += new System.EventHandler(this.C_Click);
             // 
             // CE
             // 
@@ -250,15 +252,17 @@
             this.CE.TabIndex = 15;
             this.CE.Text = "CE";
             this.CE.UseVisualStyleBackColor = true;
+            this.CE.Click += new System.EventHandler(this.CE_Click);
             // 
-            // button13
+            // Retroceso
             // 
-            this.button13.Location = new System.Drawing.Point(374, 192);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(63, 44);
-            this.button13.TabIndex = 14;
-            this.button13.Text = "button13";
-            this.button13.UseVisualStyleBackColor = true;
+            this.Retroceso.Location = new System.Drawing.Point(374, 192);
+            this.Retroceso.Name = "Retroceso";
+            this.Retroceso.Size = new System.Drawing.Size(63, 44);
+            this.Retroceso.TabIndex = 14;
+            this.Retroceso.Text = "Retr";
+            this.Retroceso.UseVisualStyleBackColor = true;
+            this.Retroceso.Click += new System.EventHandler(this.Retroceso_Click);
             // 
             // Tanmenos1
             // 
@@ -295,6 +299,7 @@
             this.Porciento.TabIndex = 26;
             this.Porciento.Text = "%";
             this.Porciento.UseVisualStyleBackColor = true;
+            this.Porciento.Click += new System.EventHandler(this.Porciento_Click);
             // 
             // Dividir
             // 
@@ -615,7 +620,7 @@
             this.Controls.Add(this.masomenos);
             this.Controls.Add(this.C);
             this.Controls.Add(this.CE);
-            this.Controls.Add(this.button13);
+            this.Controls.Add(this.Retroceso);
             this.Controls.Add(this.Tanmenos1);
             this.Controls.Add(this.Cosmenos1);
             this.Controls.Add(this.Sinmenos1);
@@ -659,7 +664,7 @@
         private System.Windows.Forms.Button masomenos;
         private System.Windows.Forms.Button C;
         private System.Windows.Forms.Button CE;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button Retroceso;
         private System.Windows.Forms.Button Tanmenos1;
         private System.Windows.Forms.Button Cosmenos1;
         private System.Windows.Forms.Button Sinmenos1;

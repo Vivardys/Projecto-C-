@@ -394,7 +394,9 @@ namespace Calculadora_Cientifica
 
         private void unoentrex_Click(object sender, EventArgs e)
         {
-
+            valor1 = Convert.ToDouble(Textbox_Principal.Text);
+            Textbox_secundario.Text = "reciproc(" + valor1.ToString() + ")";
+            Textbox_Principal.Text = Convert.ToString(1 / valor1);
         }
 
         private void Igual_Click(object sender, EventArgs e)
@@ -402,23 +404,91 @@ namespace Calculadora_Cientifica
             inicio = true;
             operacion1 = true;
             if (igual)
+            {
+                if (tipoOperaciones == null)
                 {
-                    if (tipoOperaciones == null)
-                    {
 
 
-                    }
-                    else
-                    {
-                        valor2 = Convert.ToDouble(Textbox_Principal.Text);
-                        Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text;
-                        Operaciones(valor1, valor2);
-                        igual = false;
-                    }
+                }
+                else
+                {
+                    valor2 = Convert.ToDouble(Textbox_Principal.Text);
+                    Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text;
+                    Operaciones(valor1, valor2);
+                    igual = false;
+                }
 
-                  }
+            }
+        }
+        //Boton Raiz
+        private void Raiz_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToDouble(Textbox_Principal.Text);
+            if (valor1 >= 0)
+            {
+                Textbox_secundario.Text = "sqrt(" + valor1 + ")";
+                Textbox_Principal.Text = Convert.ToString(Math.Sqrt(valor1));
+            }
+            else
+            {
+                Textbox_Principal.Text = "Error";
+
+
+            }
+
+        }
+        //boton porcentaje
+        private void Porciento_Click(object sender, EventArgs e)
+        {
+            valor2 = Convert.ToDouble(Textbox_Principal.Text);
+            Textbox_secundario.Text = Textbox_secundario.Text + Textbox_Principal.Text;
+            Textbox_Principal.Text = Convert.ToString((valor1 * valor2) / 100);
+            igual = true;
+
+
+        }
+
+        private void C_Click(object sender, EventArgs e)
+        {
+            Textbox_Principal.Text = "0";
+            Textbox_secundario.Text += "";
+            inicio = true;
+            funciones = "";
+            operacion1 = true;
+            operacion2 = true;
+            igual = true;
+            valor1 = 0;
+            valor2 = 0;
+            resultado = 0;
+
+        }
+        //Boton CE
+        private void CE_Click(object sender, EventArgs e)
+        {
+            Textbox_secundario.Text = "";
+            Textbox_Principal.Text = "0";
+            inicio = true;
+            funciones = "";
+
+        }
+        //Boton Retroceso
+        private void Retroceso_Click(object sender, EventArgs e)
+        {
+            if (Textbox_Principal.Text.Length > 1)
+            {
+                Textbox_Principal.Text = Textbox_Principal.Text.Remove(Textbox_Principal.Text.Length - 1, 1);
+                {
+                    Textbox_Principal.Text = "0";
+                    inicio = true;
+                }
+
+                if (Textbox_Principal.Text == "0")
+                {
+                }
+
+
+            }
         }
     }
 }
-
  
