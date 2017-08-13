@@ -1,0 +1,198 @@
+
+/*---->Panel----->PRINCIPAL---->REDES SOCIALES Y MENU*/
+
+/*Aplicar estilos a la tabla de Redes Sociales*/
+				
+			#redessociales	{
+						
+				border-radius: 5px;
+				border-radius: 5px;
+				}
+	
+					
+	/*Aplicar estilos al Menú*/
+	
+					
+			#nav {
+					
+				width: 1020px;
+				margin: 50px auto;
+				overflow: hidden;	
+				}
+					
+			#nav ul {
+				float: right;
+				height: 55px;
+				width: 800px;
+				opacity: 0.95;
+				border-radius: 5px;
+				}
+						
+			#nav ul li {
+					
+				float: left;
+				height: 55px;
+				}
+						
+			#nav ul li a {
+					
+				font: bold 21px/52px Georgia, "Times New Roman", Times, serif;
+				display: block;
+				height: 50px;
+				background-color: #0f6fb2;
+				color: #fff;
+				Border-radius: 15px;
+				Border-radius: 15px;
+				}
+						
+			#nav ul li a { 
+			
+				width: 160px 
+				}
+				
+ 		/*este estilo aplica para la lista desplegable*/
+		
+			#nav ul li:last-child a {
+			
+				-webkit-border-top-right-radius: 5px;
+				-webkit-border-bottom-right-radius: 5px;
+				-moz-border-radius-topright: 5px;
+				-moz-border-radius-bottomright: 5px;
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+				}
+				
+			#nav ul li a:hover {
+   
+				box-shadow: inset 0 1px 0 #0070a3,inset 0 0 30px 0 #142a4a;
+				text-shadow: 0 1px 3px #143157;
+				border-bottom: 5px solid #0e223d;
+				}
+
+			#nav ul li a span {
+				border-left: 1px solid #143157;
+				border-right: 1px solid #1563a3;
+				height: 100%;
+				display: block;
+				width: 100%;
+				text-align: center;
+				font-family: Georgia, "Times New Roman", Times, serif;
+				box-sizing: border-box;
+				}
+
+			#nav ul li:first-child a span { 
+				border-center: none; 
+				}	
+
+			*{
+				list-style: none;
+				text-decoration:none;
+				margin:0;
+				padding:0;
+				}
+			
+		/* este estilo es para la lista de adentro, borrar sino lleva*/
+			
+			.nav > li {
+			
+				float:left;
+				}
+					
+	/*---->Panel----->Body INDEX---->Panel----->Body QUIENES SOMOS------->Body PAQUETES-------> MásPaquetes---->*/
+				
+	/*Border redondo para la imagen de San Pedro de Macorís/Guayacanes/Juan Dolio/copyright*/
+		
+			#ISP {
+			
+				border-radius: 5px;
+				border-radius: 5px;
+				Width="205"
+				Border Color:#FE642E;
+				background-color: #0f6fb2;
+				Cellspacing= 50px;
+				Cellspadding= 15px
+				}
+				
+			.ISP {
+				
+				color: #FEFCFC;
+				font-family: Georgia, "Times New Roman", Times, serif;
+				}
+				
+			#copyright {
+			
+				background-color: #000000;
+				border-radius: 5px;
+				border-radius: 5px;
+				margin:0.5em;
+				padding:0.5em;
+				}
+				
+			
+	/*Aplicar estilos a Novedades*/
+					
+			#Novedades {
+				border=0;
+				padding= 25px;
+				margin= 25px;
+				border-radius: 5px;
+				border-radius: 5px;
+				background-color: #0f6fb2;
+				}
+			
+	/*Aplicar estilos al 2do auncio*/
+
+			.anuncio {
+				text-align: justify;
+				color: #FEFCFC;
+				background-color: #000000;
+				}
+			
+			.precio {
+				text-align: justify;
+				color: #FEFCFC;
+				background-color: #FE642E;
+	
+	/*Aplicar margin y padding en la página de Conocenos para lo textos*/
+			
+			#AA {
+				margin:0.5em;
+				padding:0.5em;
+				}  /*ojo aplicar margen al mision y vision y valores----pendiente*/
+				
+	
+	/*contactanos*/
+	
+	/*Estilo Panel--Empresa*/
+		
+		 #empresa
+			{
+				border-radius: 5px;
+				border-radius: 5px;
+				
+			}
+		
+	
+						
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+				
